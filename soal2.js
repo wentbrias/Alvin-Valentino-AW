@@ -9,7 +9,7 @@ const transactions = [
 
 function totalRevenue(transactions){
     return transactions.reduce((acc, curr) => {
-        return acc + curr.amount;
+        return acc + curr.amount
     }, 0)
 }
 
