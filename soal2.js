@@ -18,7 +18,7 @@ function revenueByCategory(transactions){
     for(const item of transactions){
         const findIndexByName = grouppedObjectByRevenue.findIndex((detail) => detail.category === item.category);
         if(findIndexByName > -1) {
-            grouppedObjectByRevenue[findIndexByName].amount += item.amount;
+            grouppedObjectByRevenue[findIndexByName].amount += item.amount
         } else {
             grouppedObjectByRevenue.push({
                  category: item.category,
@@ -27,7 +27,7 @@ function revenueByCategory(transactions){
         }
     }
 
-    return grouppedObjectByRevenue;
+    return grouppedObjectByRevenue
 }
 
 
