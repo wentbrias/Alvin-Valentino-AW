@@ -39,7 +39,7 @@ function repeatBuyers(transactions){
         }
     }, {})
 
-    return Object.keys(counts).filter(buyer => counts[buyer] > 1);
+    return Object.keys(counts).filter(buyer => counts[buyer] > 1)
 }
 
 function topCategory(transactions){
